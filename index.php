@@ -99,9 +99,16 @@
 // }
 
 
+//string functions  
+
+// $String = "THis is a string with white space
+// ";
+// echo $String;
+
+// echo strtoupper($String);
 
 //array 
-$cars = ["bmw", "sierra", "charger"];  // indexed array
+// $cars = ["bmw", "sierra", "charger"];  // indexed array
 
 //array functions 
 
@@ -113,16 +120,16 @@ $cars = ["bmw", "sierra", "charger"];  // indexed array
 
 
 //associative arrays
-$names = [     // firstname is the key, Qualeke is the value
-   "firstname" => "Qualeke",
-   "lastname" => "Singleton"
-];
+// $names = [     // firstname is the key, Qualeke is the value
+//    "firstname" => "Qualeke",
+//    "lastname" => "Singleton"
+// ];
 
 
 //loop through associative array with keys and values
-foreach ($names as $name => $value) {
-   echo " <h3>$value is the   $name </h3>";
-}
+// foreach ($names as $name => $value) {
+//    echo " <h3>$value is the   $name </h3>";
+// }
 
 
 #CONDITIONALS   
@@ -132,7 +139,7 @@ foreach ($names as $name => $value) {
 // } else {
 //    echo "false";
 // }
- 
+
 
 
 //Object 
@@ -218,7 +225,7 @@ foreach ($names as $name => $value) {
 
 
 
-                                           ## OBJECT ORIENTED PHP
+## OBJECT ORIENTED PHP
 // class Basket
 // {
 //    public $itemsTotal;
@@ -277,3 +284,21 @@ foreach ($names as $name => $value) {
 
 // $user1 = new User(55554);
 // echo $user1->getAge();
+
+
+
+
+//CODING CHALLENGES
+//FIZZBUZZ 
+for ($i = 1; $i <=  100; $i++) {
+   if ($i % 3 === 0 && $i % 5 === 0) {
+      echo "FizzBuzz <br/>";
+   } elseif ($i % 3 === 0) {
+      echo "Fizz <br/>";
+   } elseif ($i % 5 === 0) {
+      echo "Buzz <br/>";
+   } else {
+      echo $i . "<br/>";
+   }
+   echo "\n";
+}
